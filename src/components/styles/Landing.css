@@ -215,12 +215,11 @@
 
 .landing-info h2 {
   margin: 0;
-  margin-top: -20px;
-  margin-left: 20px;
+  margin-top: -10px;
   font-family: "Geist", sans-serif;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: clamp(32px, 8vw, 75px);
+  line-height: 1.1;
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -235,7 +234,7 @@
 
 h2.landing-info-h2 {
   color: #14b8a6;
-  font-size: 42px;
+  font-size: clamp(38px, 10vw, 85px);
   width: 120%;
   margin: 0;
   font-family: "Geist", sans-serif;

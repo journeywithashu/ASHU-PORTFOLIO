@@ -15,43 +15,43 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Java Programmer Intern</h4>
+                <h5>CodeSoft</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2023</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Gained hands-on experience in core Java concepts, OOPs, and real-world problem-solving. 
+              Worked on developing basic Java applications, console-based programs, and improved 
+              understanding of debugging, code structure, and logic building.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>B.Tech in Computer Science</h4>
+                <h5>Azad Group Of Educational Institute</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2021-25</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Pursuing Bachelor of Technology in Computer Science from Lucknow, UP. 
+              Gaining expertise in Data Structures & Algorithms, OS, DBMS, 
+              Artificial Intelligence, and Network Security.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Class XII (SSC)</h4>
+                <h5>Maharishi Vidya Mandir, Sitapur</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2019</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Completed Higher Secondary education from Maharishi Vidya Mandir, 
+              Sitapur, UP. Developed a strong logical foundation and interest in 
+              programming during early schooling years.
             </p>
           </div>
         </div>

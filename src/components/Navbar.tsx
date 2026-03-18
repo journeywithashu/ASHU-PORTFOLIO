@@ -13,11 +13,13 @@ const Navbar = () => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
+      smooth: 1.5,
+      speed: 1.5,
       effects: true,
       autoResize: true,
+      normalizeScroll: true,
       ignoreMobileResize: true,
+      smoothTouch: 0.1,
     });
 
     smoother.scrollTop(0);
@@ -43,14 +45,14 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RC
+          AY
         </a>
         <a
-          href="mailto:rajeshchittyal21@gmail.com"
+          href="mailto:officialashu2003@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          rajeshchittyal21@gmail.com
+          officialashu2003@gmail.com
         </a>
         <ul>
           <li>
