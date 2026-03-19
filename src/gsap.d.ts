@@ -1,0 +1,16 @@
+declare module 'gsap-trial/ScrollSmoother';
+declare module 'gsap-trial/SplitText';
+declare module 'gsap-trial/ScrollTrigger';
+declare module 'gsap-trial/inertia';
+declare module 'gsap-trial/drawSVG';
+declare module 'gsap-trial/gsdevtools';
+declare module 'gsap-trial/morphsvg';
+declare module 'gsap-trial/scrolto';
+declare module 'gsap-trial/motionpath';
+declare module 'gsap-trial/physics2d';
+declare module 'gsap-trial/physicsprops';
+declare module 'gsap-trial/scrambletext';
+declare module 'gsap-trial/customease';
+declare module 'gsap-trial/custombounce';
+declare module 'gsap-trial/customwiggle';
+declare module 'gsap-trial/all';
