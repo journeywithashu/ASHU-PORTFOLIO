@@ -137,25 +137,37 @@ const TechStack = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
+      const workElement = document.getElementById("work");
+      if (!workElement) return;
+
+      const threshold = workElement.getBoundingClientRect().top;
       setIsActive(scrollY > threshold);
     };
-    document.querySelectorAll(".header a").forEach((elem) => {
-      const element = elem as HTMLAnchorElement;
-      element.addEventListener("click", () => {
-        const interval = setInterval(() => {
-          handleScroll();
-        }, 10);
-        setTimeout(() => {
-          clearInterval(interval);
-        }, 1000);
-      });
+
+    const headerLinks = document.querySelectorAll(".header a");
+    const intervalIds: number[] = [];
+
+    const handleLinkClick = () => {
+      const interval = window.setInterval(() => {
+        handleScroll();
+      }, 10);
+      intervalIds.push(interval);
+      window.setTimeout(() => {
+        window.clearInterval(interval);
+      }, 1000);
+    };
+
+    headerLinks.forEach((elem) => {
+      elem.addEventListener("click", handleLinkClick);
     });
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      headerLinks.forEach((elem) => {
+        elem.removeEventListener("click", handleLinkClick);
+      });
+      intervalIds.forEach((id) => window.clearInterval(id));
     };
   }, []);
   const materials = useMemo(() => {
