@@ -110,11 +110,11 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
     if (!isActive) return;
     const targetVec = vec.lerp(
       new THREE.Vector3(
-        (pointer.x * viewport.width) / 2,
-        (pointer.y * viewport.height) / 2,
-        0
+        (pointer.x * viewport.width) / 1.5, // Slightly dampened follow
+        (pointer.y * viewport.height) / 1.5,
+        1
       ),
-      0.2
+      0.15
     );
     ref.current?.setNextKinematicTranslation(targetVec);
   });
