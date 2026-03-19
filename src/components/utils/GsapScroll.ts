@@ -14,7 +14,7 @@ export function setCharTimeline(
       trigger: ".landing-section",
       start: "top top",
       end: "bottom top",
-      scrub: true,
+      scrub: 1, // Add lag for smoother follow
       invalidateOnRefresh: true,
     },
   });
@@ -23,7 +23,7 @@ export function setCharTimeline(
       trigger: ".about-section",
       start: "center 55%",
       end: "bottom top",
-      scrub: true,
+      scrub: 1, // Add lag for smoother follow
       invalidateOnRefresh: true,
     },
   });
@@ -32,7 +32,7 @@ export function setCharTimeline(
       trigger: ".whatIDO",
       start: "top top",
       end: "bottom top",
-      scrub: true,
+      scrub: 1, // Add lag for smoother follow
       invalidateOnRefresh: true,
     },
   });
@@ -74,7 +74,7 @@ export function setCharTimeline(
       tl2
         .to(
           camera.position,
-          { z: 75, y: 8.4, duration: 6, delay: 2, ease: "power3.inOut" },
+          { z: 75, y: 8.4, duration: 6, delay: 2, ease: "none" }, // Use ease none for scrubbed animations to feel responsive
           0
         )
         .to(".about-section", { y: "30%", duration: 6 }, 0)
@@ -138,7 +138,7 @@ export function setAllTimeline() {
       trigger: ".career-section",
       start: "top 30%",
       end: "100% center",
-      scrub: true,
+      scrub: 0.5, // Faster scrub for snappier career timeline
       invalidateOnRefresh: true,
     },
   });
